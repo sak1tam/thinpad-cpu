@@ -1,0 +1,101 @@
+Release 14.6 Map P.68d (nt64)
+Xilinx Map Application Log File for Design 'cpu'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off
+-c 100 -smartguide E:/Learn/cpux/cpu_guide.ncd -o cpu_map.ncd cpu.ngd cpu.pcf 
+Target Device  : xc3s1200e
+Target Package : fg320
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Thu Jan 10 14:30:32 2019
+
+WARNING:Map:120 - The command line option -c can not be used when running in
+   timing mode.  The option will be ignored.
+Loading device for application Rf_Device from file '3s1200e.nph' in environment
+E:\software\xilinx\14.6\ISE_DS\ISE\.
+   "cpu" is an NCD, version 3.2, device xc3s1200e, package fg320, speed -4
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:54 - 'xc3s1200e' is a WebPack part.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+----------------------------------------------------------------------
+Mapping design into LUTs...
+Running directed packing...
+Constraining slice packing based on guide NCD.
+Running delay-based LUT packing...
+Updating timing models...
+Running timing-driven placement...
+WARNING:Pack:2609 - SmartGuide is more efficient (better guiding and runtime)
+   when used with explicit timing constraints. If you want the full benefit of
+   the SmartGuide flow, please add timing constraints to your design, then
+   re-create your guide file.
+Total REAL time at the beginning of Placer: 8 secs 
+Total CPU  time at the beginning of Placer: 7 secs 
+
+Phase 1.7  Design Feasibility Check
+Phase 1.7  Design Feasibility Check (Checksum:fafab4ec) REAL time: 8 secs 
+
+Phase 2.31  Local Placement Optimization
+Phase 2.31  Local Placement Optimization (Checksum:fafab4ec) REAL time: 8 secs 
+
+Phase 3.2  Initial Clock and IO Placement
+Phase 3.2  Initial Clock and IO Placement (Checksum:fafab4ec) REAL time: 8 secs 
+
+Phase 4.30  Global Clock Region Assignment
+Phase 4.30  Global Clock Region Assignment (Checksum:fafab4ec) REAL time: 8 secs 
+
+Phase 5.36  Local Placement Optimization
+Phase 5.36  Local Placement Optimization (Checksum:fafab4ec) REAL time: 8 secs 
+
+Phase 6.8  Global Placement
+Phase 6.8  Global Placement (Checksum:dd2e1d9c) REAL time: 13 secs 
+
+Phase 7.5  Local Placement Optimization
+Phase 7.5  Local Placement Optimization (Checksum:dd2e1d9c) REAL time: 13 secs 
+
+Phase 8.18  Placement Optimization
+Phase 8.18  Placement Optimization (Checksum:dd2e1d9c) REAL time: 13 secs 
+
+Phase 9.5  Local Placement Optimization
+Phase 9.5  Local Placement Optimization (Checksum:dd2e1d9c) REAL time: 13 secs 
+
+Total REAL time to Placer completion: 13 secs 
+Total CPU  time to Placer completion: 12 secs 
+Running post-placement packing...
+Updating route info ...
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    2
+Logic Utilization:
+  Number of Slice Flip Flops:           296 out of  17,344    1%
+  Number of 4 input LUTs:             1,103 out of  17,344    6%
+Logic Distribution:
+  Number of occupied Slices:            592 out of   8,672    6%
+    Number of Slices containing only related logic:     592 out of     592 100%
+    Number of Slices containing unrelated logic:          0 out of     592   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       1,118 out of  17,344    6%
+    Number used as logic:             1,103
+    Number used as a route-thru:         15
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 55 out of     250   22%
+  Number of BUFGMUXs:                     1 out of      24    4%
+
+Average Fanout of Non-Clock Nets:                3.89
+
+Peak Memory Usage:  395 MB
+Total REAL time to MAP completion:  14 secs 
+Total CPU time to MAP completion:   13 secs 
+
+Mapping completed.
+See MAP report file "cpu_map.mrp" for details.

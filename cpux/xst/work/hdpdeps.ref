@@ -1,0 +1,6 @@
+V3 3
+FL E:/Learn/cpux/cpu.vhd 2019/01/10.14:26:05 P.68d
+EN work/cpu 1547101569 FL E:/Learn/cpux/cpu.vhd PB ieee/std_logic_1164 1370735607 \
+      PB ieee/std_logic_arith 1370735608 PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/cpu/Behavioral 1547101570 \
+      FL E:/Learn/cpux/cpu.vhd EN work/cpu 1547101569

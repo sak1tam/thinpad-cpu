@@ -1,0 +1,499 @@
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "E:/Learn/cpux/cpu_guide.ncd" -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "E:/Learn/cpux/cpu_guide.ncd" cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "E:/Learn/cpux/cpu_guide.ncd" -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "E:/Learn/cpux/cpu_guide.ncd" cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "E:/Learn/cpux/cpu_guide.ncd" -o cpu_map.ncd cpu.ngd cpu.pcf 
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "E:/Learn/cpux/cpu_guide.ncd" -o cpu_map.ncd cpu.ngd cpu.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "E:/Learn/cpux/cpu_guide.ncd" -o cpu_map.ncd cpu.ngd cpu.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "E:/Learn/cpux/cpu_guide.ncd" -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "E:/Learn/cpux/cpu_guide.ncd" cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "E:/Learn/cpux/cpu_guide.ncd" -o cpu_map.ncd cpu.ngd cpu.pcf 
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 
+xst -intstyle ise -ifn "E:/Learn/cpux/cpu.xst" -ofn "E:/Learn/cpux/cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc cpu.ucf -p xc3s1200e-fg320-4 cpu.ngc cpu.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 cpu_map.ncd cpu.ncd cpu.pcf 
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "E:/Learn/cpux/cpu_guide.ncd" -o cpu_map.ncd cpu.ngd cpu.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "E:/Learn/cpux/cpu_guide.ncd" cpu_map.ncd cpu.ncd cpu.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml cpu.twx cpu.ncd -o cpu.twr cpu.pcf -ucf cpu.ucf 
+bitgen -intstyle ise -f cpu.ut cpu.ncd 

@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=E:\Learn\cpux\impact.xsl
+OUTFILE=E:\Learn\cpux\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=E:\Learn\cpux
+LICENSE=iMPACT
+USER_INFO=iMPACT

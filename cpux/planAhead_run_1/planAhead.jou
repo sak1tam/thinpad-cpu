@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# PlanAhead v14.6 (64-bit)
+# Build 269223 by xbuild on Wed Jun  5 11:14:03 MDT 2013
+# Start of session at: Wed Jan 09 17:36:08 2019
+# Process ID: 8904
+# Log file: E:/Learn/cpux/planAhead_run_1/planAhead.log
+# Journal file: E:/Learn/cpux/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source E:/Learn/cpux/pa.fromNetlist.tcl
+startgroup
+set_property package_pin U9 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin B9 [get_ports clk]
+endgroup
+save_constraints
